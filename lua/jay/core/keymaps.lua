@@ -34,5 +34,3 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 -- Clipboard Related
 keymap.set("i", "<C-a>", "<Esc>ggVGi", { desc = "Performs ctrl + a in insert mode" })
 keymap.set("n", "<C-a>", "ggVG", { desc = "Performs ctrl + a in Normal mode" })
-keymap.set("n", "<C-c>", '"*y', { desc = "Performs ctrl + c in Insert mode" })
---keymap.set("n", "<C-c>", "<Esc>gvy", { desc = "Performs ctrl + c in Normal mode" })
