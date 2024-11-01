@@ -1,0 +1,4 @@
+TODO : When configuring nvim in linux machine
+1 : Install build essensials in linux 
+2 : Install node
+3 : Requires unzip -- (for stylua)
