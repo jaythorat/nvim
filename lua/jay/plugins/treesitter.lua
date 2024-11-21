@@ -62,9 +62,13 @@ return {
 		vim.opt.foldtext =
 			[[substitute(getline(v:foldstart),'\\t',repeat('\ ',&tabstop),'g').'...'.trim(getline(v:foldend)) . ' (' . (v:foldend - v:foldstart + 1) . ' lines)']]
 
-		-- Optional: Set fillchars for a cleaner look
-		vim.opt.fillchars = { fold = " " }
-
+		-- Better looking folds
+		vim.opt.fillchars = {
+			fold = " ",
+			foldopen = "",
+			foldclose = "",
+			foldsep = " ",
+		}
 		-- Key mappings for folding
 		local opts = { noremap = true, silent = true }
 		vim.keymap.set("n", "za", "za", opts) -- Toggle fold under cursor
